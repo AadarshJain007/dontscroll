@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doomscroll Detox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="room"></div>
+    <div id="blackout"></div>
+
+    <svg id="ghost" viewBox="0 0 200 240" aria-hidden="true">
+        <path d="M20 230V90C20 40 55 10 100 10s80 30 80 80v140l-22-18-22 18-22-18-22 18-22-18z" fill="#e9e4f2"/>
+    <ellipse cx="72" cy="90" rx="14" ry="22" fill="#07060a"/>
+    <ellipse cx="128" cy="90" rx="14" ry="22" fill="#07060a"/>
+    <ellipse cx="100" cy="150" rx="16" ry="26" fill="#07060a"/>
+  </svg>
+  <p id="haunt-text" aria-live="assertive"></p>
+
+  <div id="eyes" aria-hidden="true"><i class="eye"></i><i class="eye"></i></div>
+ 
+   <main>
+    <h1> Dont Doomscroll</h1>
+    <div id="candle" aria-hidden="true">🕯️</div>
+    <div id="timer" role="timer">25:00</div>
+    <p id="message">switch tab and then....</p>
+     
+    <input id="intent" type="text" maxlength="40" placeholder="What are you avoiding? (optional)" aria-label="Task you want to focus on">
+    <div class="row" id="presets">
+      <button data-min="1">1 min (demo)</button>
+      <button data-min="15">15 min</button>
+      <button data-min="25" class="active">25 min</button>
+      <button data-min="45">45 min</button>
+    </div>
+
+     <div class="row">
+      <button id="start">Begin</button>
+    </div>
+
+    <div id="stats">
+      <span>Hauntings: <b id="count-haunts">0</b></span>
+      <span>Light: <b id="count-light">35%</b></span>
+      <span>Sessions done: <b id="count-done">0</b></span>
+      <span>Best streak: <b id="count-best">0</b></span>
+    </div>
+
+    <p id="rank"></p>
+    <div class="row">
+        <button id="sound">Sound: yes</button>
+        <button id="reset">ah do it again</button>
+    </div>
+    <ol id="history" aria-label="your old datatata"></ol>
+   </main>
+
+   <script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
